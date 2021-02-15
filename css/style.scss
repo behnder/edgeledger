@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+@import "utilities.scss";
+@import "navbar.scss";
+@import "cases.scss";
+
+// General
+body {
+	font-family: "Open Sans", sans-serif;
+	background: #fff;
+	color: #333;
+	line-height: 1.6rem;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+h1,
+h2 {
+	font-weight: 300;
+	line-height: 1.2;
+}
+
+p {
+	margin: 10px 0;
+}
+
+img {
+	width: 100%;
+}
+
+// header
+
+.hero {
+	background: url("../img/showcase.jpg") no-repeat center center/cover;
+	height: 100vh;
+	position: relative;
+
+	z-index: 10;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #333;
+		filter: opacity(0.8);
+
+		z-index: -1;
+	}
+}
+
+// main content
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	color: $text-base;
+	padding: 0 20px;
+
+	h1 {
+		font-size: 55px;
+		font-weight: 500;
+		text-align: center;
+	}
+
+	p {
+		font-size: 23px;
+		max-width: 600px;
+		margin: 20px 0 30px;
+		text-align: center;
+	}
+}
+
+p {
+	font-size: 10px;
+	justify-content: center;
+	justify-content: center;
+	justify-content: center;
+}
+
+//Icons
+
+.icons {
+	padding: 30px;
+
+	h3 {
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
+
+	p {
+		font-size: 0.8rem;
+	}
+
+	i {
+		background-color: $text-primary;
+		color: $text-base;
+		padding: 1rem;
+		border-radius: 50%;
+		margin-bottom: 15px;
+	}
+}
+
+// FLEX ITEMS
+
+.flex-items {
+	display: flex;
+	text-align: center;
+	padding: 0 0.5rem;
+
+	div {
+		padding: 10px;
+	}
+}
+
+//--------
+.row-photo {
+	background: url("../img/people.jpg") no-repeat center center/cover;
+}
+
+.row-content {
+	color: white;
+
+	h3 {
+		font-size: 1.2rem;
+		font-weight: 600;
+	}
+
+	h1 {
+		padding: 1rem 0;
+		font-size: 2.5rem;
+		font-weight: 100;
+	}
+
+	p {
+		font-size: 1rem;
+		font-weight: lighter;
+	}
+
+	.btn-primary {
+		display: inline-flex;
+		border: $text-base 1px solid;
+		padding: 0.8rem;
+		border-radius: 5px;
+		margin-top: 25px;
+	}
+}
+
+// cases
+.cases-galery {
+	padding-bottom: 60px;
+}
+
+.row-cases {
+	display: flex;
+
+	.column-cases {
+		width: 25%;
+		margin: 0% 10px;
+
+		img {
+			object-fit: cover;
+			margin: 5px 0;
+			width: 100%;
+			height: 50%;
+
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+}
+
+// blog posts
+.flex-columns {
+	.blog {
+		background: $text-secondary;
+	}
+
+	.blog-photo {
+		background: url("../img/home/blog.jpg") no-repeat center center/cover;
+	}
+}
+
+.blog {
+	a {
+		background: $text-secondary;
+	}
+}
+
+// TEAM
+
+.team {
+	div {
+		padding: 0px 20px;
+		width: 33%;
+
+		div {
+			width: 100%;
+		}
+	}
+
+	img {
+		border-radius: 50%;
+		object-fit: cover;
+		height: 50%;
+	}
+}
+
+// contact
+.flex-columns {
+	.contact-content {
+		display: flex;
+		flex-direction: column;
+		background: rgb(224, 224, 224);
+		color: $text-base-2;
+
+		input {
+			width: 100%;
+			margin: 0.5rem;
+			padding: 0.6rem 0.5rem;
+			border-radius: 3px;
+			border: 0px;
+		}
+
+		.btn-primary {
+			background: $text-base-2;
+		}
+	}
+
+	.contact-photo {
+		background: url("../img/home/contact.jpg") no-repeat center center/cover;
+	}
+}
+
+//footer
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+
+	.social {
+		padding: 10px;
+
+		a {
+			padding: 8px;
+
+			&:hover {
+				color: $text-primary;
+			}
+		}
+	}
+
+	a {
+		color: $text-base-2;
+	}
+
+	.legend {
+		font-size: 1rem;
+	}
+}
+
+//MOBILE
+
+@media (max-width: 768px) {
+	* {
+		font-size: 1rem;
+	}
+
+	.navbar {
+		flex-direction: column;
+
+		.logo {
+			padding: 15px 0;
+		}
+	}
+
+	.icons {
+		flex-direction: column;
+	}
+
+	.flex-items {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.solutions {
+		flex-direction: column;
+	}
+
+	.team {
+		div {
+			width: 100%;
+		}
+	}
+
+	.cases {
+
+		h1 {
+			text-align: center;
+			font-size: 3rem;
+		}
+
+		p {
+			text-align: center;
+		}
+
+	}
+
+	.contact {
+		flex-direction: column;
+	}
+
+	.row-cases {
+		flex-direction: column;
+
+		.column-cases {
+			width: 100%;
+			margin: 20px 0;
+		}
+	}
+
+}

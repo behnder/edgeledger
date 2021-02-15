@@ -1,0 +1,67 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.text-primary {
+  color: #28a745;
+}
+
+.text-secondary {
+  color: #0284d0;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1.5rem;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-primary {
+  background: #28a745;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #0284d0;
+  color: #fff;
+}
+
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+.btn-light {
+  background: #fff;
+  color: #333;
+}
+
+.flex-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 400px;
+}
+
+.flex-columns .row-content {
+  padding: 1.3rem;
+  background: #28a745;
+  width: 100%;
+}
+
+.flex-columns .row-photo {
+  width: 100%;
+}
+/*# sourceMappingURL=utilities.css.map */

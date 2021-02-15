@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACV,UAAU,EAAE,KAAK;CACjB",
+    "sources": [
+        "casesGalery.scss"
+    ],
+    "names": [],
+    "file": "casesGalery.css"
+}
